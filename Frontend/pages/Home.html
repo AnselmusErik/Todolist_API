@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todolist</title>
+    <link rel="stylesheet" href="../Assets/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat Datang!</h1>
+        <h2>Daftar Tugas:</h2>
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Tambahkan tugas baru...">
+            <button type="submit">Tambah <i class="fa-regular fa-square-plus"></i></button>
+        </form>
+        <ul id="todolist"></ul>
+        <!-- <a href="#" id="logoutButton" class="logout-button"><i class="fa-sharp fa-solid fa-right-from-bracket"></i> Logout</a> -->
+        <a href="#" id="logoutButton" class="logout-button">
+            <i class="fa-sharp fa-solid fa-right-from-bracket"></i> Logout
+        </a>
+    </div>
+    <script src="../Assets/js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Mahasiswa</title>
+    <link rel="stylesheet" href="../Assets/CSS/regis.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <form id="registerForm">
+        <h1>Register Mahasiswa</h1>
+
+        <p id="errorMessage" style="color: red; display: none;"></p>
+
+        <label for="username">Username : </label>
+        <input type="text" name="username" id="username" required>
+
+        <label for="password">Password : </label>
+        <input type="password" name="password" id="password" required>
+
+        <label for="confirm_password">Confirm Password : </label>
+        <input type="password" name="confirm_password" id="confirm_password" required>
+
+        <button type="submit">Register</button>
+
+        <a href="login.html" style="display: block; margin-top: 20px; margin-left: 150px;">
+            <i class="fas fa-arrow-left"></i> Back to Login
+        </a>
+    </form>
+
+    <script src="../Assets/JS/regis.js"></script>
+</body>
+
+</html>

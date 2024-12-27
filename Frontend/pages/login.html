@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Mahasiswa</title>
+    <link rel="stylesheet" href="../Assets/css/login.css">
+</head>
+
+<body>
+    <form id="loginForm">
+        <h1>Login Mahasiswa</h1>
+        <p id="error-message" style="color: red; display: none;"></p>
+
+        <label for="username">Username : </label>
+        <input type="text" name="username" id="username" required>
+        <label for="password">Password : </label>
+        <input type="password" name="password" id="password" required>
+        <button type="submit">Login</button>
+
+        <!-- Link ke halaman reset password dan register -->
+        <div class="link-container">
+            <a href="reset.html">Reset Password?</a>
+            <a href="regis.html">Create Account</a>
+        </div>
+    </form>
+
+    <script src="../Assets/js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('BG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    animation: fadeIn 1s;
+}
+
+h1 {
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 50px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+    animation: slideDown 2s;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#todolist {
+    list-style: none;
+    padding: 0;
+}
+
+#todolist li {
+    background: #f9f9f9;
+    color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.logout-button {
+    display: inline-block;
+    background: #cd0c0c;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background 0.5s ease;
+    -webkit-transition: background 0.5s ease;
+    -moz-transition: background 0.5s ease;
+    -ms-transition: background 0.5s ease;
+    -o-transition: background 0.5s ease;
+}
+
+.logout-button:hover {
+    background: #444;
+}
+
+@keyframes expand {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
